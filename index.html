@@ -33,14 +33,15 @@
 <meta name="twitter:description" content="Compare ATEX and IECEx certified intrinsically safe headsets for hazardous areas." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Satoshi:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 <script>
 tailwind.config = {
   theme: {
     extend: {
-      fontFamily: { sans: ['Inter','sans-serif'], serif: ['Instrument Serif','serif'], mono: ['"JetBrains Mono"','monospace'] },
+      fontFamily: { sans: ['Satoshi','sans-serif'], serif: ['"DM Serif Display"','serif'], mono: ['"JetBrains Mono"','monospace'] },
       colors: {
         surface: '#0b0405',
         card: '#150e0f',
@@ -72,8 +73,8 @@ tailwind.config = {
 }
 </script>
 <style>
-body { font-family: 'Inter', sans-serif; }
-.serif { font-family: 'Instrument Serif', serif; }
+body { font-family: 'Satoshi', sans-serif; }
+.serif { font-family: 'DM Serif Display', serif; }
 .mono { font-family: 'JetBrains Mono', monospace; }
 .badge-z1 { background: #dcfce7; color: #166534; }
 .badge-z2 { background: #fef3c7; color: #92400e; }
@@ -157,8 +158,8 @@ body { font-family: 'Inter', sans-serif; }
 <!-- Hero -->
 <header class="relative w-full min-h-screen flex items-end overflow-hidden">
   <!-- Full-screen background image — industrial refinery, no sparks -->
-  <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=2000&q=80&auto=format&fit=crop"
-       alt="Industrial refinery complex at dusk — hazardous area where ATEX certified headsets are required"
+  <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=2400&q=80&auto=format&fit=crop"
+       alt="Aerial view of an industrial refinery complex — hazardous area where ATEX certified headsets are required"
        class="absolute inset-0 w-full h-full object-cover"
        loading="eager" />
   <!-- Gradient overlays -->
@@ -170,7 +171,7 @@ body { font-family: 'Inter', sans-serif; }
     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-accent text-[12px] font-medium mb-8 border border-white/10">
       <i class="ph ph-shield-check"></i> Independent comparison — not affiliated with any manufacturer
     </div>
-    <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-bold tracking-tight leading-[0.95] mb-6 text-white max-w-4xl">
+    <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-bold tracking-tight leading-[0.95] mb-6 text-white max-w-4xl font-serif">
       Every<br />
       <span class="text-accent">Intrinsically Safe</span><br />
       Headset Compared
@@ -214,135 +215,135 @@ body { font-family: 'Inter', sans-serif; }
   <p class="text-muted text-[14px] mb-6">All currently available ATEX/IECEx certified headsets for hazardous areas.</p>
 
   <div class="overflow-x-auto rounded-xl border border-border bg-card">
-  <table class="w-full text-[13px]">
+  <table class="w-full text-[12px]">
     <thead>
       <tr class="bg-[#1a1a1a] border-b border-border">
-        <th class="text-left px-4 py-3 font-semibold sticky left-0 bg-[#1a1a1a] min-w-[180px]">Model</th>
-        <th class="text-left px-4 py-3 font-semibold">Manufacturer</th>
-        <th class="text-left px-4 py-3 font-semibold">Type</th>
-        <th class="text-center px-4 py-3 font-semibold">Zone</th>
-        <th class="text-center px-4 py-3 font-semibold">ATEX</th>
-        <th class="text-center px-4 py-3 font-semibold">IECEx</th>
-        <th class="text-center px-4 py-3 font-semibold">UL913</th>
-        <th class="text-center px-4 py-3 font-semibold">Bluetooth</th>
-        <th class="text-center px-4 py-3 font-semibold">2-Way Radio</th>
-        <th class="text-center px-4 py-3 font-semibold">NRR</th>
-        <th class="text-center px-4 py-3 font-semibold">Battery</th>
-        <th class="text-right px-4 py-3 font-semibold">Price (est.)</th>
+        <th class="text-left px-3 py-2.5 font-semibold sticky left-0 bg-[#1a1a1a] min-w-[140px]">Model</th>
+        <th class="text-left px-3 py-2.5 font-semibold">Mfr</th>
+        <th class="text-left px-3 py-2.5 font-semibold">Type</th>
+        <th class="text-center px-2 py-2.5 font-semibold">Zone</th>
+        <th class="text-center px-2 py-2.5 font-semibold" title="ATEX">ATEX</th>
+        <th class="text-center px-2 py-2.5 font-semibold" title="IECEx">IECEx</th>
+        <th class="text-center px-2 py-2.5 font-semibold" title="UL913">UL</th>
+        <th class="text-center px-2 py-2.5 font-semibold" title="Bluetooth">BT</th>
+        <th class="text-center px-2 py-2.5 font-semibold" title="Two-Way Radio">Radio</th>
+        <th class="text-center px-2 py-2.5 font-semibold">NRR</th>
+        <th class="text-center px-2 py-2.5 font-semibold">Batt</th>
+        <th class="text-right px-3 py-2.5 font-semibold">Price</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-border">
       <tr class="hover:bg-white/5" id="sensear-sm1p-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1P-Ex</td>
-        <td class="px-4 py-3">Sensear / ecom</td>
-        <td class="px-4 py-3">Over-ear earmuff</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center">27 dB</td>
-        <td class="px-4 py-3 text-center">24 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$1,200</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">Sensear SM1P-Ex</td>
+        <td class="px-3 py-2.5">Sensear / ecom</td>
+        <td class="px-3 py-2.5">Over-ear</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z1 px-1.5 py-0.5 rounded text-[10px] font-medium">Z1</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center">27 dB</td>
+        <td class="px-2 py-2.5 text-center">24h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$1.2k</td>
       </tr>
       <tr class="hover:bg-white/5" id="sensear-sm1b-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1B-Ex</td>
-        <td class="px-4 py-3">Sensear</td>
-        <td class="px-4 py-3">Over-ear earmuff</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center">27 dB</td>
-        <td class="px-4 py-3 text-center">24 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$900</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">Sensear SM1B-Ex</td>
+        <td class="px-3 py-2.5">Sensear</td>
+        <td class="px-3 py-2.5">Over-ear</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z1 px-1.5 py-0.5 rounded text-[10px] font-medium">Z1</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center">27 dB</td>
+        <td class="px-2 py-2.5 text-center">24h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$900</td>
       </tr>
       <tr class="hover:bg-white/5" id="sensear-sm1b-exdp">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1B-ExDP</td>
-        <td class="px-4 py-3">Sensear</td>
-        <td class="px-4 py-3">Double protection</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center">31 dB</td>
-        <td class="px-4 py-3 text-center">24 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$1,100</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">Sensear SM1B-ExDP</td>
+        <td class="px-3 py-2.5">Sensear</td>
+        <td class="px-3 py-2.5">Dual prot.</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z1 px-1.5 py-0.5 rounded text-[10px] font-medium">Z1</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center">31 dB</td>
+        <td class="px-2 py-2.5 text-center">24h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$1.1k</td>
       </tr>
       <tr class="hover:bg-white/5" id="peltor-litecom-pro-iii-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor LiteCom PRO III Ex</td>
-        <td class="px-4 py-3">3M / ecom</td>
-        <td class="px-4 py-3">Over-ear with radio</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center">28 dB</td>
-        <td class="px-4 py-3 text-center">14 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$1,500</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">3M LiteCom PRO III Ex</td>
+        <td class="px-3 py-2.5">3M / ecom</td>
+        <td class="px-3 py-2.5">Over-ear + radio</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z0 px-1.5 py-0.5 rounded text-[10px] font-medium">Z0</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center">28 dB</td>
+        <td class="px-2 py-2.5 text-center">14h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$1.5k</td>
       </tr>
       <tr class="hover:bg-white/5" id="ecom-ex-tra-30">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">ecom Ex-TRA 30</td>
-        <td class="px-4 py-3">ecom (Pepperl+Fuchs)</td>
-        <td class="px-4 py-3">Over-ear wired</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z2 px-2 py-0.5 rounded text-[11px] font-medium">Zone 2</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center">25 dB</td>
-        <td class="px-4 py-3 text-center">N/A (wired)</td>
-        <td class="px-4 py-3 text-right font-mono">~$400</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">ecom Ex-TRA 30</td>
+        <td class="px-3 py-2.5">ecom (P+F)</td>
+        <td class="px-3 py-2.5">Wired</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z2 px-1.5 py-0.5 rounded text-[10px] font-medium">Z2</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center">25 dB</td>
+        <td class="px-2 py-2.5 text-center">N/A</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$400</td>
       </tr>
       <tr class="hover:bg-white/5">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor WS Alert XPI Ex</td>
-        <td class="px-4 py-3">3M</td>
-        <td class="px-4 py-3">Over-ear earmuff</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center">29 dB</td>
-        <td class="px-4 py-3 text-center">30 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$600</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">3M Alert XPI Ex</td>
+        <td class="px-3 py-2.5">3M</td>
+        <td class="px-3 py-2.5">Over-ear</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z0 px-1.5 py-0.5 rounded text-[10px] font-medium">Z0</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center">29 dB</td>
+        <td class="px-2 py-2.5 text-center">30h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$600</td>
       </tr>
       <tr class="hover:bg-white/5">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor WS ProTac XPI Ex</td>
-        <td class="px-4 py-3">3M</td>
-        <td class="px-4 py-3">Over-ear earmuff</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center">31 dB</td>
-        <td class="px-4 py-3 text-center">30 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$700</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">3M ProTac XPI Ex</td>
+        <td class="px-3 py-2.5">3M</td>
+        <td class="px-3 py-2.5">Over-ear</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z0 px-1.5 py-0.5 rounded text-[10px] font-medium">Z0</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center">31 dB</td>
+        <td class="px-2 py-2.5 text-center">30h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$700</td>
       </tr>
       <tr class="hover:bg-white/5">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-card">RealWear HMT-Z1</td>
-        <td class="px-4 py-3">RealWear</td>
-        <td class="px-4 py-3">Head-mounted display</td>
-        <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
-        <td class="px-4 py-3 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
-        <td class="px-4 py-3 text-center">—</td>
-        <td class="px-4 py-3 text-center">3 hr</td>
-        <td class="px-4 py-3 text-right font-mono">~$2,500</td>
+        <td class="px-3 py-2.5 font-medium sticky left-0 bg-card">RealWear HMT-Z1</td>
+        <td class="px-3 py-2.5">RealWear</td>
+        <td class="px-3 py-2.5">HMD</td>
+        <td class="px-2 py-2.5 text-center"><span class="badge-z1 px-1.5 py-0.5 rounded text-[10px] font-medium">Z1</span></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph-fill ph-check-circle text-green-600"></i></td>
+        <td class="px-2 py-2.5 text-center"><i class="ph ph-minus text-zinc-300"></i></td>
+        <td class="px-2 py-2.5 text-center">—</td>
+        <td class="px-2 py-2.5 text-center">3h</td>
+        <td class="px-3 py-2.5 text-right font-mono">~$2.5k</td>
       </tr>
     </tbody>
   </table>
