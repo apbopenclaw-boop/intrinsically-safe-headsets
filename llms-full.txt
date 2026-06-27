@@ -1,0 +1,124 @@
+# intrinsicallysafeheadsets.com — Full Reference
+
+> Independent comparison of ATEX and IECEx certified intrinsically safe headsets for hazardous areas.
+
+## Product 1: Sensear SM1P-Ex
+
+- Type: Over-ear communication headset
+- Certification: ATEX Zone 1/21, IECEx, UL913 8th, CSA
+- Zone: 1
+- Protection concept: Intrinsic safety (Ex ia IIC T4)
+- Bluetooth: Yes
+- Two-way radio: Yes (wired connection)
+- NRR: 27 dB (headband), 24 dB (neckband), 23 dB (helmet mount)
+- Battery: Rechargeable Li-ion, 24 hours
+- IP rating: IP54
+- Key feature: SENS technology — enhances speech, suppresses noise to 82 dB(A)
+- Price: ~$1,200
+- Wearing styles: Headband, behind-the-neck, helmet mount
+- Manufacturer: Sensear (distributed by ecom instruments / Pepperl+Fuchs)
+- Website: https://www.sensear.com
+
+## Product 2: Sensear SM1B-Ex
+
+- Type: Over-ear communication headset
+- Certification: ATEX Zone 1/21, IECEx, UL913 8th, CSA
+- Zone: 1
+- Bluetooth: No
+- Two-way radio: Yes (removable wired connection)
+- NRR: 27 dB (headband), 24 dB (neckband), 23 dB (helmet mount)
+- Battery: Rechargeable Li-ion 2250mAh, 24 hours, 5-hour charge
+- IP rating: IP54
+- Key feature: Battery-powered SENS technology without Bluetooth
+- Price: ~$900
+- Manufacturer: Sensear
+- Website: https://www.sensear.com
+
+## Product 3: Sensear SM1B-ExDP
+
+- Type: Double protection headset (earplug + earmuff)
+- Certification: ATEX Zone 1/21, IECEx, UL913, CSA
+- Zone: 1
+- Bluetooth: No
+- Two-way radio: Yes
+- NRR: 31 dB (combined earplug + earmuff)
+- Battery: Rechargeable Li-ion, 24 hours
+- Key feature: Highest NRR of any ATEX headset. Dual protection for extreme noise.
+- Price: ~$1,100
+- Manufacturer: Sensear
+
+## Product 4: 3M Peltor WS LiteCom PRO III Ex
+
+- Type: Over-ear headset with built-in PMR446/UHF radio
+- Certification: ATEX Zone 0/20, IECEx (Ex ia IIC T4 Ga)
+- Zone: 0 (highest classification)
+- Bluetooth: No
+- Two-way radio: Built-in (PMR446/UHF, up to 30 channels, 3 km range)
+- NRR: 28 dB
+- Battery: Li-ion 1350mAh, 14 hours on high power
+- Frequency range: 403–470 MHz
+- Channel separation: 12.5/20/25 kHz
+- Key feature: Only Zone 0 headset with built-in radio — no separate Ex radio needed
+- Price: ~$1,500
+- Manufacturer: 3M (distributed by ecom instruments)
+
+## Product 5: 3M Peltor WS Alert XPI Ex
+
+- Type: Over-ear Bluetooth hearing protection
+- Certification: ATEX Zone 0/20, IECEx
+- Zone: 0
+- Bluetooth: Yes
+- Two-way radio: No
+- NRR: 29 dB
+- Battery: 30 hours
+- Key feature: Ambient listening via external microphones. Zone 0 certified.
+- Price: ~$600
+- Manufacturer: 3M
+
+## Product 6: 3M Peltor WS ProTac XPI Ex
+
+- Type: Over-ear Bluetooth hearing protection
+- Certification: ATEX Zone 0/20, IECEx
+- Zone: 0
+- Bluetooth: Yes
+- Two-way radio: No
+- NRR: 31 dB
+- Battery: 30 hours
+- Key feature: Highest NRR in the Peltor Ex range. Level-dependent ambient listening.
+- Price: ~$700
+- Manufacturer: 3M
+
+## Product 7: ecom Ex-TRA 30
+
+- Type: Wired headset for ATEX radios
+- Certification: ATEX Zone 2/22, IECEx
+- Zone: 2
+- Bluetooth: No
+- Two-way radio: Wired connection to Ex radio
+- NRR: 25 dB
+- Battery: N/A (wired, powered by radio)
+- Key feature: No battery needed. Most affordable ATEX headset.
+- Price: ~$400
+- Wearing styles: Hearing protection headset, neckband, lightweight headset
+- Manufacturer: ecom instruments (Pepperl+Fuchs)
+
+## Product 8: RealWear HMT-Z1
+
+- Type: Head-mounted display / wearable computer
+- Certification: ATEX Zone 1/21, IECEx, CSA Class I Div 1
+- Zone: 1
+- Bluetooth: Yes
+- Two-way radio: No (but supports VoIP)
+- Display: Micro-display (equivalent to 7" tablet at arm's length)
+- Battery: 3 hours
+- Key feature: Hands-free computing with voice control for hazardous areas
+- Price: ~$2,500
+- Manufacturer: RealWear
+- Website: https://www.realwear.com
+
+## Important safety notes
+- All headsets must be used within their certified zone classification
+- Charging must ALWAYS occur outside the hazardous area
+- Battery replacement is only permitted with manufacturer-specified certified batteries
+- Regular inspection of headset condition is required per IEC 60079-17
+- Passive (non-electronic) earmuffs still require ATEX marking for use in classified zones

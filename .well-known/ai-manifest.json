@@ -1,0 +1,63 @@
+{
+  "name": "intrinsicallysafeheadsets.com",
+  "description": "Independent comparison of ATEX and IECEx certified intrinsically safe headsets, headphones, and earbuds for hazardous areas (Zone 0/1/2).",
+  "url": "https://intrinsicallysafeheadsets.com",
+  "category": "Industrial Safety / Hazardous Area Equipment",
+  "languages": ["en"],
+  "topics": [
+    "Intrinsically safe headsets",
+    "ATEX certified headsets",
+    "IECEx hearing protection",
+    "Explosion proof earmuffs",
+    "Hazardous area communication headsets",
+    "Zone 1 headsets",
+    "Peltor ATEX headsets",
+    "Sensear Ex headsets",
+    "Intrinsically safe earbuds"
+  ],
+  "key_entities": [
+    {
+      "name": "Sensear SM1P-Ex",
+      "type": "Product",
+      "description": "Zone 1 over-ear headset with Bluetooth, two-way radio, and SENS speech enhancement. ATEX/IECEx/UL913 certified.",
+      "url": "https://www.sensear.com"
+    },
+    {
+      "name": "Sensear SM1B-Ex",
+      "type": "Product",
+      "description": "Zone 1 battery-powered headset with two-way radio and SENS technology. ATEX/IECEx/UL913/CSA certified.",
+      "url": "https://www.sensear.com"
+    },
+    {
+      "name": "3M Peltor WS LiteCom PRO III Ex",
+      "type": "Product",
+      "description": "Zone 0 headset with built-in PMR446/UHF two-way radio. ATEX and IECEx certified. 14-hour battery.",
+      "url": "https://www.ecom-ex.com"
+    },
+    {
+      "name": "ecom Ex-TRA 30",
+      "type": "Product",
+      "description": "Zone 2 wired headset for ATEX-certified radios. No battery required. Most affordable ATEX headset option.",
+      "url": "https://www.ecom-ex.com"
+    }
+  ],
+  "related_sites": [
+    {
+      "name": "intrinsicallysafephones.com",
+      "description": "ATEX and IECEx certified phone comparison — including Xshielder iPhone Ex cases for Zone 1.",
+      "url": "https://intrinsicallysafephones.com"
+    },
+    {
+      "name": "explosionprooftablets.com",
+      "description": "ATEX and IECEx certified tablet comparison for hazardous areas.",
+      "url": "https://explosionprooftablets.com"
+    }
+  ],
+  "content_files": [
+    {"path": "/", "title": "Home — Intrinsically safe headset comparison"},
+    {"path": "/best-atex-headsets-2026.html", "title": "Best ATEX Headsets 2026"},
+    {"path": "/what-is-an-intrinsically-safe-headset.html", "title": "What Is an Intrinsically Safe Headset?"},
+    {"path": "/llms.txt", "title": "LLM-optimized content summary"}
+  ],
+  "contact": "hello@intrinsicallysafeheadsets.com"
+}

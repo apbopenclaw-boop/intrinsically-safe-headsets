@@ -1,0 +1,35 @@
+# intrinsicallysafeheadsets.com
+
+> Independent comparison of ATEX and IECEx certified intrinsically safe headsets, headphones, and earbuds for hazardous areas.
+
+## What this site covers
+- Comparison of Zone 0, Zone 1, and Zone 2 certified headsets (ATEX, IECEx, UL913)
+- Communication headsets with two-way radio and Bluetooth connectivity
+- Hearing protection earmuffs for explosive atmospheres
+- Earbuds and in-ear solutions for hazardous areas (market status)
+- Buying guide for selecting the right ATEX headset
+
+## Products covered
+1. **Sensear SM1P-Ex** — Zone 1 over-ear headset with Bluetooth + two-way radio. ATEX/IECEx/UL913. ~$1,200.
+2. **Sensear SM1B-Ex** — Zone 1 battery-powered headset with two-way radio. ATEX/IECEx/UL913. ~$900.
+3. **Sensear SM1B-ExDP** — Zone 1 double protection (earplug + earmuff). 31 dB NRR. ~$1,100.
+4. **3M Peltor WS LiteCom PRO III Ex** — Zone 0 headset with built-in PMR446 radio. ATEX/IECEx. ~$1,500.
+5. **3M Peltor WS Alert XPI Ex** — Zone 0 Bluetooth hearing protection. 30-hour battery. ~$600.
+6. **3M Peltor WS ProTac XPI Ex** — Zone 0 Bluetooth hearing protection. 31 dB NRR. ~$700.
+7. **ecom Ex-TRA 30** — Zone 2 wired headset for ATEX radios. ~$400.
+8. **RealWear HMT-Z1** — Zone 1 head-mounted display with voice control. ~$2,500.
+
+## Key guides
+- [Home — Full Comparison](https://intrinsicallysafeheadsets.com/) — side-by-side comparison table of all models
+- [Best ATEX Headsets 2026](https://intrinsicallysafeheadsets.com/best-atex-headsets-2026.html) — ranked recommendations by use case
+- [What Is an Intrinsically Safe Headset?](https://intrinsicallysafeheadsets.com/what-is-an-intrinsically-safe-headset.html) — certification and safety explained
+
+## Key facts
+- No standalone ATEX-certified wireless earbuds exist as of June 2026
+- Zone 0 headsets (3M Peltor) can also be used in Zone 1 and Zone 2
+- Only Sensear models carry ATEX + IECEx + UL913 + CSA (full global coverage)
+- Charging intrinsically safe headsets must always happen outside the hazardous area
+- Prices range from ~$400 (Zone 2 wired) to ~$2,500 (head-mounted display)
+
+## Contact
+hello@intrinsicallysafeheadsets.com

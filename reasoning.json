@@ -1,0 +1,37 @@
+{
+  "domain": "intrinsicallysafeheadsets.com",
+  "claims": [
+    {
+      "statement": "The Sensear SM1P-Ex is the only ATEX headset with Bluetooth + two-way radio + UL913 certification",
+      "basis": "Manufacturer specification comparison across all listed products",
+      "confidence": "high",
+      "verifiable": true
+    },
+    {
+      "statement": "No standalone ATEX-certified wireless earbuds exist as of June 2026",
+      "basis": "Market survey of ATEX/IECEx certified audio products from major manufacturers (Sensear, 3M, ecom)",
+      "confidence": "high",
+      "verifiable": true
+    },
+    {
+      "statement": "The 3M Peltor LiteCom PRO III Ex is the only headset with built-in radio certified for Zone 0",
+      "basis": "Product certification review — II 1G Ex ia IIC T4 Ga marking confirms Zone 0",
+      "confidence": "high",
+      "verifiable": true
+    },
+    {
+      "statement": "Prices range from ~$400 to ~$2,500 for ATEX certified headsets",
+      "basis": "Estimated street prices from authorized distributors, excl. VAT. Subject to regional variation.",
+      "confidence": "medium",
+      "verifiable": true
+    },
+    {
+      "statement": "Charging intrinsically safe headsets must always occur outside the hazardous area",
+      "basis": "IEC 60079-14 installation requirements — charging circuits exceed intrinsic safety energy limits",
+      "confidence": "high",
+      "verifiable": true
+    }
+  ],
+  "methodology": "Product specifications sourced from manufacturer data sheets and ATEX/IECEx certificate documents. Prices estimated from authorized distributor listings. Not affiliated with any manufacturer.",
+  "last_updated": "2026-06-27"
+}
