@@ -36,11 +36,11 @@ tailwind.config = {
     extend: {
       fontFamily: { sans: ['Inter','sans-serif'], serif: ['Instrument Serif','serif'], mono: ['"JetBrains Mono"','monospace'] },
       colors: {
-        surface: '#0a0a0a',
-        card: '#141414',
-        border: '#262626',
-        muted: '#808080',
-        accent: '#fc1c46',
+        surface: '#0b0405',
+        card: '#150e0f',
+        border: '#382e30',
+        muted: '#858182',
+        accent: '#e32735',
       }
     }
   }
@@ -75,7 +75,7 @@ body { font-family: 'Inter', sans-serif; }
 .badge-atex { background: #dbeafe; color: #1e40af; }
 .badge-iec { background: #f3e8ff; color: #6b21a8; }
 .product-card { transition: transform 0.15s, box-shadow 0.15s; }
-.product-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(252,28,70,0.08); border-color: #fc1c46 !important; }
+.product-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(252,28,70,0.08); border-color: #e32735 !important; }
 .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 </style>
 </head>
@@ -83,7 +83,7 @@ body { font-family: 'Inter', sans-serif; }
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSPF6PH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Nav -->
-<nav class="fixed top-0 w-full z-50 nav-blur bg-[#0a0a0a]/90 border-b border-border">
+<nav class="fixed top-0 w-full z-50 nav-blur bg-[#0b0405]/90 border-b border-border">
 <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
   <a href="/" class="flex items-center gap-2 font-semibold text-[15px]">
     <i class="ph ph-headset text-blue-600 text-xl"></i>
@@ -148,6 +148,17 @@ body { font-family: 'Inter', sans-serif; }
   </p>
 </div>
 </header>
+
+<!-- Hero Image -->
+<section class="px-4 pb-12">
+<div class="max-w-5xl mx-auto rounded-2xl overflow-hidden border border-border" style="max-height:360px;">
+  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1400&q=80&auto=format&fit=crop" 
+       alt="Industrial plant at dusk — hazardous area where ATEX certified headsets are required"
+       class="w-full h-full object-cover" style="max-height:360px;"
+       loading="eager" />
+</div>
+<p class="text-center text-[11px] text-muted mt-2">Photo by <a href="https://unsplash.com/@icons8" class="underline">Icons8 Team</a> on Unsplash — free to use</p>
+</section>
 
 <!-- Quick Stats -->
 <section class="px-4 pb-12">
