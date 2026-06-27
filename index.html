@@ -155,54 +155,57 @@ body { font-family: 'Inter', sans-serif; }
 </div>
 
 <!-- Hero -->
-<header class="pt-24 pb-16 px-4">
-<div class="max-w-4xl mx-auto text-center">
-  <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-[12px] font-medium mb-6">
-    <i class="ph ph-shield-check"></i> Independent comparison — not affiliated with any manufacturer
-  </div>
-  <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-5">
-    Every <span class="text-accent">Intrinsically Safe Headset</span><br class="hidden md:block" />
-    Compared for 2026
-  </h1>
-  <p class="text-lg text-muted max-w-2xl mx-auto leading-relaxed">
-    ATEX, IECEx, and UL913 certified headsets, headphones, and earbuds for Zone 0, 1, and 2 hazardous areas.
-    Side-by-side specs, certifications, and pricing for every model on the market.
-  </p>
-</div>
-</header>
-
-<!-- Hero Image -->
-<section class="px-4 pb-12">
-<div class="max-w-5xl mx-auto rounded-2xl overflow-hidden border border-border" style="max-height:360px;">
-  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1400&q=80&auto=format&fit=crop" 
-       alt="Industrial plant at dusk — hazardous area where ATEX certified headsets are required"
-       class="w-full h-full object-cover" style="max-height:360px;"
+<header class="relative w-full min-h-screen flex items-end overflow-hidden">
+  <!-- Full-screen background image — industrial refinery, no sparks -->
+  <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=2000&q=80&auto=format&fit=crop"
+       alt="Industrial refinery complex at dusk — hazardous area where ATEX certified headsets are required"
+       class="absolute inset-0 w-full h-full object-cover"
        loading="eager" />
-</div>
-<p class="text-center text-[11px] text-muted mt-2">Photo by <a href="https://unsplash.com/@icons8" class="underline">Icons8 Team</a> on Unsplash — free to use</p>
-</section>
+  <!-- Gradient overlays -->
+  <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/20"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-surface/70 to-transparent"></div>
 
-<!-- Quick Stats -->
-<section class="px-4 pb-12">
-<div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-  <div class="bg-card rounded-xl p-4 border border-border text-center">
-    <div class="text-2xl font-bold text-accent">8</div>
-    <div class="text-[13px] text-muted mt-1">Headsets Compared</div>
+  <!-- Hero content -->
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pb-20 pt-40">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-accent text-[12px] font-medium mb-8 border border-white/10">
+      <i class="ph ph-shield-check"></i> Independent comparison — not affiliated with any manufacturer
+    </div>
+    <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-bold tracking-tight leading-[0.95] mb-6 text-white max-w-4xl">
+      Every<br />
+      <span class="text-accent">Intrinsically Safe</span><br />
+      Headset Compared
+    </h1>
+    <p class="text-lg md:text-xl text-white/60 max-w-xl leading-relaxed mb-14">
+      ATEX, IECEx, and UL913 certified headsets for Zone&nbsp;0,&nbsp;1, and&nbsp;2 hazardous areas. Side-by-side specs, certifications, and pricing for every model on the market.
+    </p>
+
+    <!-- Stats row -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden backdrop-blur-md border border-white/10 max-w-2xl" style="background:rgba(255,255,255,0.06)">
+      <div class="bg-surface/50 px-6 py-5 text-center">
+        <div class="text-2xl md:text-3xl font-bold text-white">8</div>
+        <div class="text-[11px] text-white/40 mt-1 uppercase tracking-widest">Headsets</div>
+      </div>
+      <div class="bg-surface/50 px-6 py-5 text-center">
+        <div class="text-2xl md:text-3xl font-bold text-white">4</div>
+        <div class="text-[11px] text-white/40 mt-1 uppercase tracking-widest">Brands</div>
+      </div>
+      <div class="bg-surface/50 px-6 py-5 text-center">
+        <div class="text-2xl md:text-3xl font-bold text-white">Zone 0–2</div>
+        <div class="text-[11px] text-white/40 mt-1 uppercase tracking-widest">Coverage</div>
+      </div>
+      <div class="bg-surface/50 px-6 py-5 text-center">
+        <div class="text-2xl md:text-3xl font-bold text-white">2026</div>
+        <div class="text-[11px] text-white/40 mt-1 uppercase tracking-widest">Updated</div>
+      </div>
+    </div>
   </div>
-  <div class="bg-card rounded-xl p-4 border border-border text-center">
-    <div class="text-2xl font-bold text-accent">4</div>
-    <div class="text-[13px] text-muted mt-1">Manufacturers</div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
+    <span class="text-[11px] text-white/30 uppercase tracking-widest">Scroll</span>
+    <svg width="20" height="20" fill="none" stroke="white" stroke-width="1.5" class="opacity-30"><path d="M5 8l5 5 5-5"/></svg>
   </div>
-  <div class="bg-card rounded-xl p-4 border border-border text-center">
-    <div class="text-2xl font-bold text-accent">Zone 0–2</div>
-    <div class="text-[13px] text-muted mt-1">Zone Coverage</div>
-  </div>
-  <div class="bg-card rounded-xl p-4 border border-border text-center">
-    <div class="text-2xl font-bold text-accent">Jun 2026</div>
-    <div class="text-[13px] text-muted mt-1">Last Updated</div>
-  </div>
-</div>
-</section>
+</header>
 
 <!-- Comparison Table -->
 <section id="comparison" class="px-4 pb-16">
