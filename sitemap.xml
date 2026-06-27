@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://intrinsicallysafeheadsets.com/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://intrinsicallysafeheadsets.com/best-atex-headsets-2026.html</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://intrinsicallysafeheadsets.com/what-is-an-intrinsically-safe-headset.html</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://intrinsicallysafeheadsets.com/</loc><lastmod>2026-06-27</lastmod><priority>1.0</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/best-atex-headsets-2026.html</loc><lastmod>2026-06-27</lastmod><priority>0.9</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/what-is-an-intrinsically-safe-headset.html</loc><lastmod>2026-06-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/de/</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/de/best-atex-headsets-2026.html</loc><lastmod>2026-06-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/de/what-is-an-intrinsically-safe-headset.html</loc><lastmod>2026-06-27</lastmod><priority>0.5</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/nl/</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/nl/best-atex-headsets-2026.html</loc><lastmod>2026-06-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/nl/what-is-an-intrinsically-safe-headset.html</loc><lastmod>2026-06-27</lastmod><priority>0.5</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/es/</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/es/best-atex-headsets-2026.html</loc><lastmod>2026-06-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/es/what-is-an-intrinsically-safe-headset.html</loc><lastmod>2026-06-27</lastmod><priority>0.5</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/pt-br/</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/pt-br/best-atex-headsets-2026.html</loc><lastmod>2026-06-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://intrinsicallysafeheadsets.com/pt-br/what-is-an-intrinsically-safe-headset.html</loc><lastmod>2026-06-27</lastmod><priority>0.5</priority></url>
 </urlset>

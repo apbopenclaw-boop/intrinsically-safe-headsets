@@ -39,8 +39,34 @@
     <a href="/" class="hover:text-white">Home</a>
     <a href="/best-atex-headsets-2026.html" class="hover:text-white">Best Headsets 2026</a>
   </div>
+  <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
 </div>
 </nav>
+
+<div id="mobileMenu" class="hidden fixed inset-0 z-[60] bg-surface/95 nav-blur px-6 pt-6">
+  <div class="flex justify-between items-center mb-8">
+    <a href="/" class="flex items-center gap-2 font-semibold text-[15px] text-white">
+      <i class="ph ph-headset text-accent text-xl"></i> intrinsicallysafeheadsets.com
+    </a>
+    <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-2" aria-label="Close menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="space-y-1">
+    <a href="/" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">Home</a>
+    <a href="/best-atex-headsets-2026.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">Best ATEX Headsets 2026</a>
+    <a href="/what-is-an-intrinsically-safe-headset.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">What Is an IS Headset?</a>
+    <div class="border-t border-border my-4"></div>
+    <div class="flex gap-3 px-3">
+      <a href="/de/" class="text-[13px] text-muted hover:text-white">DE</a>
+      <a href="/nl/" class="text-[13px] text-muted hover:text-white">NL</a>
+      <a href="/es/" class="text-[13px] text-muted hover:text-white">ES</a>
+      <a href="/pt-br/" class="text-[13px] text-muted hover:text-white">PT</a>
+    </div>
+  </div>
+</div>
 
 <article class="pt-24 pb-16 px-4">
 <div class="max-w-3xl mx-auto prose-zinc">
