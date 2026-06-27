@@ -20,6 +20,9 @@
 8. **RealWear HMT-Z1** — Zone 1 head-mounted display with voice control. ~$2,500.
 
 ## Key guides
+- [Industrial Noise Cancelling Headsets](https://intrinsicallysafeheadsets.com/industrial-noise-cancelling-headsets.html) — top industrial headsets including ATEX options
+- [Sensear SM1P vs SM1B vs SM1R](https://intrinsicallysafeheadsets.com/sensear-sm1p-vs-sm1b-comparison.html) — which Sensear model for which use case
+- [ATEX Radios Guide](https://intrinsicallysafeheadsets.com/atex-radios-hazardous-area-communication.html) — intrinsically safe radios and headset compatibility
 - [Home — Full Comparison](https://intrinsicallysafeheadsets.com/) — side-by-side comparison table of all models
 - [Best ATEX Headsets 2026](https://intrinsicallysafeheadsets.com/best-atex-headsets-2026.html) — ranked recommendations by use case
 - [What Is an Intrinsically Safe Headset?](https://intrinsicallysafeheadsets.com/what-is-an-intrinsically-safe-headset.html) — certification and safety explained
