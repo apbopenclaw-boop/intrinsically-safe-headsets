@@ -26,7 +26,18 @@
 <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 <script>
 tailwind.config = {
-  theme: { extend: { fontFamily: { sans: ['Inter','sans-serif'], serif: ['Instrument Serif','serif'], mono: ['"JetBrains Mono"','monospace'] } } }
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter','sans-serif'], serif: ['Instrument Serif','serif'], mono: ['"JetBrains Mono"','monospace'] },
+      colors: {
+        surface: '#0a0a0a',
+        card: '#141414',
+        border: '#262626',
+        muted: '#808080',
+        accent: '#fc1c46',
+      }
+    }
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -58,25 +69,25 @@ body { font-family: 'Inter', sans-serif; }
 .badge-atex { background: #dbeafe; color: #1e40af; }
 .badge-iec { background: #f3e8ff; color: #6b21a8; }
 .product-card { transition: transform 0.15s, box-shadow 0.15s; }
-.product-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+.product-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(252,28,70,0.08); border-color: #fc1c46 !important; }
 .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 </style>
 </head>
-<body class="bg-zinc-50 text-zinc-900 antialiased">
+<body class="bg-surface text-[#cccccc] antialiased">
 
 <!-- Nav -->
-<nav class="fixed top-0 w-full z-50 nav-blur bg-white/80 border-b border-zinc-200">
+<nav class="fixed top-0 w-full z-50 nav-blur bg-[#0a0a0a]/90 border-b border-border">
 <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
   <a href="/" class="flex items-center gap-2 font-semibold text-[15px]">
     <i class="ph ph-headset text-blue-600 text-xl"></i>
-    <span>intrinsicallysafeheadsets<span class="text-blue-600">.com</span></span>
+    <span>intrinsicallysafeheadsets<span class="text-accent">.com</span></span>
   </a>
-  <div class="hidden md:flex items-center gap-6 text-[13px] font-medium text-zinc-600">
-    <a href="#comparison" class="hover:text-zinc-900">Compare</a>
-    <a href="#headsets" class="hover:text-zinc-900">Headsets</a>
-    <a href="#earbuds" class="hover:text-zinc-900">Earbuds</a>
-    <a href="#guide" class="hover:text-zinc-900">Buying Guide</a>
-    <a href="#faq" class="hover:text-zinc-900">FAQ</a>
+  <div class="hidden md:flex items-center gap-6 text-[13px] font-medium text-muted">
+    <a href="#comparison" class="hover:text-white">Compare</a>
+    <a href="#headsets" class="hover:text-white">Headsets</a>
+    <a href="#earbuds" class="hover:text-white">Earbuds</a>
+    <a href="#guide" class="hover:text-white">Buying Guide</a>
+    <a href="#faq" class="hover:text-white">FAQ</a>
   </div>
 </div>
 </nav>
@@ -84,14 +95,14 @@ body { font-family: 'Inter', sans-serif; }
 <!-- Hero -->
 <header class="pt-24 pb-16 px-4">
 <div class="max-w-4xl mx-auto text-center">
-  <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 text-[12px] font-medium mb-6">
+  <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-[12px] font-medium mb-6">
     <i class="ph ph-shield-check"></i> Independent comparison — not affiliated with any manufacturer
   </div>
   <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-5">
-    Every <span class="text-blue-600">Intrinsically Safe Headset</span><br class="hidden md:block" />
+    Every <span class="text-accent">Intrinsically Safe Headset</span><br class="hidden md:block" />
     Compared for 2026
   </h1>
-  <p class="text-lg text-zinc-600 max-w-2xl mx-auto leading-relaxed">
+  <p class="text-lg text-muted max-w-2xl mx-auto leading-relaxed">
     ATEX, IECEx, and UL913 certified headsets, headphones, and earbuds for Zone 0, 1, and 2 hazardous areas.
     Side-by-side specs, certifications, and pricing for every model on the market.
   </p>
@@ -101,21 +112,21 @@ body { font-family: 'Inter', sans-serif; }
 <!-- Quick Stats -->
 <section class="px-4 pb-12">
 <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-  <div class="bg-white rounded-xl p-4 border border-zinc-200 text-center">
-    <div class="text-2xl font-bold text-blue-600">8</div>
-    <div class="text-[13px] text-zinc-500 mt-1">Headsets Compared</div>
+  <div class="bg-card rounded-xl p-4 border border-border text-center">
+    <div class="text-2xl font-bold text-accent">8</div>
+    <div class="text-[13px] text-muted mt-1">Headsets Compared</div>
   </div>
-  <div class="bg-white rounded-xl p-4 border border-zinc-200 text-center">
-    <div class="text-2xl font-bold text-blue-600">4</div>
-    <div class="text-[13px] text-zinc-500 mt-1">Manufacturers</div>
+  <div class="bg-card rounded-xl p-4 border border-border text-center">
+    <div class="text-2xl font-bold text-accent">4</div>
+    <div class="text-[13px] text-muted mt-1">Manufacturers</div>
   </div>
-  <div class="bg-white rounded-xl p-4 border border-zinc-200 text-center">
-    <div class="text-2xl font-bold text-blue-600">Zone 0–2</div>
-    <div class="text-[13px] text-zinc-500 mt-1">Zone Coverage</div>
+  <div class="bg-card rounded-xl p-4 border border-border text-center">
+    <div class="text-2xl font-bold text-accent">Zone 0–2</div>
+    <div class="text-[13px] text-muted mt-1">Zone Coverage</div>
   </div>
-  <div class="bg-white rounded-xl p-4 border border-zinc-200 text-center">
-    <div class="text-2xl font-bold text-blue-600">Jun 2026</div>
-    <div class="text-[13px] text-zinc-500 mt-1">Last Updated</div>
+  <div class="bg-card rounded-xl p-4 border border-border text-center">
+    <div class="text-2xl font-bold text-accent">Jun 2026</div>
+    <div class="text-[13px] text-muted mt-1">Last Updated</div>
   </div>
 </div>
 </section>
@@ -123,14 +134,14 @@ body { font-family: 'Inter', sans-serif; }
 <!-- Comparison Table -->
 <section id="comparison" class="px-4 pb-16">
 <div class="max-w-6xl mx-auto">
-  <h2 class="text-2xl font-bold mb-2">Side-by-Side Comparison</h2>
-  <p class="text-zinc-500 text-[14px] mb-6">All currently available ATEX/IECEx certified headsets for hazardous areas.</p>
+  <h2 class="text-2xl font-bold mb-2 text-white">Side-by-Side Comparison</h2>
+  <p class="text-muted text-[14px] mb-6">All currently available ATEX/IECEx certified headsets for hazardous areas.</p>
 
-  <div class="overflow-x-auto rounded-xl border border-zinc-200 bg-white">
+  <div class="overflow-x-auto rounded-xl border border-border bg-card">
   <table class="w-full text-[13px]">
     <thead>
-      <tr class="bg-zinc-50 border-b border-zinc-200">
-        <th class="text-left px-4 py-3 font-semibold sticky left-0 bg-zinc-50 min-w-[180px]">Model</th>
+      <tr class="bg-[#1a1a1a] border-b border-border">
+        <th class="text-left px-4 py-3 font-semibold sticky left-0 bg-[#1a1a1a] min-w-[180px]">Model</th>
         <th class="text-left px-4 py-3 font-semibold">Manufacturer</th>
         <th class="text-left px-4 py-3 font-semibold">Type</th>
         <th class="text-center px-4 py-3 font-semibold">Zone</th>
@@ -144,9 +155,9 @@ body { font-family: 'Inter', sans-serif; }
         <th class="text-right px-4 py-3 font-semibold">Price (est.)</th>
       </tr>
     </thead>
-    <tbody class="divide-y divide-zinc-100">
-      <tr class="hover:bg-blue-50/30" id="sensear-sm1p-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">Sensear SM1P-Ex</td>
+    <tbody class="divide-y divide-border">
+      <tr class="hover:bg-white/5" id="sensear-sm1p-ex">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1P-Ex</td>
         <td class="px-4 py-3">Sensear / ecom</td>
         <td class="px-4 py-3">Over-ear earmuff</td>
         <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
@@ -159,8 +170,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">24 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$1,200</td>
       </tr>
-      <tr class="hover:bg-blue-50/30" id="sensear-sm1b-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">Sensear SM1B-Ex</td>
+      <tr class="hover:bg-white/5" id="sensear-sm1b-ex">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1B-Ex</td>
         <td class="px-4 py-3">Sensear</td>
         <td class="px-4 py-3">Over-ear earmuff</td>
         <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
@@ -173,8 +184,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">24 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$900</td>
       </tr>
-      <tr class="hover:bg-blue-50/30" id="sensear-sm1b-exdp">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">Sensear SM1B-ExDP</td>
+      <tr class="hover:bg-white/5" id="sensear-sm1b-exdp">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">Sensear SM1B-ExDP</td>
         <td class="px-4 py-3">Sensear</td>
         <td class="px-4 py-3">Double protection</td>
         <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
@@ -187,8 +198,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">24 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$1,100</td>
       </tr>
-      <tr class="hover:bg-blue-50/30" id="peltor-litecom-pro-iii-ex">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">3M Peltor LiteCom PRO III Ex</td>
+      <tr class="hover:bg-white/5" id="peltor-litecom-pro-iii-ex">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor LiteCom PRO III Ex</td>
         <td class="px-4 py-3">3M / ecom</td>
         <td class="px-4 py-3">Over-ear with radio</td>
         <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
@@ -201,8 +212,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">14 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$1,500</td>
       </tr>
-      <tr class="hover:bg-blue-50/30" id="ecom-ex-tra-30">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">ecom Ex-TRA 30</td>
+      <tr class="hover:bg-white/5" id="ecom-ex-tra-30">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">ecom Ex-TRA 30</td>
         <td class="px-4 py-3">ecom (Pepperl+Fuchs)</td>
         <td class="px-4 py-3">Over-ear wired</td>
         <td class="px-4 py-3 text-center"><span class="badge-z2 px-2 py-0.5 rounded text-[11px] font-medium">Zone 2</span></td>
@@ -215,8 +226,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">N/A (wired)</td>
         <td class="px-4 py-3 text-right font-mono">~$400</td>
       </tr>
-      <tr class="hover:bg-blue-50/30">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">3M Peltor WS Alert XPI Ex</td>
+      <tr class="hover:bg-white/5">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor WS Alert XPI Ex</td>
         <td class="px-4 py-3">3M</td>
         <td class="px-4 py-3">Over-ear earmuff</td>
         <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
@@ -229,8 +240,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">30 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$600</td>
       </tr>
-      <tr class="hover:bg-blue-50/30">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">3M Peltor WS ProTac XPI Ex</td>
+      <tr class="hover:bg-white/5">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">3M Peltor WS ProTac XPI Ex</td>
         <td class="px-4 py-3">3M</td>
         <td class="px-4 py-3">Over-ear earmuff</td>
         <td class="px-4 py-3 text-center"><span class="badge-z0 px-2 py-0.5 rounded text-[11px] font-medium">Zone 0</span></td>
@@ -243,8 +254,8 @@ body { font-family: 'Inter', sans-serif; }
         <td class="px-4 py-3 text-center">30 hr</td>
         <td class="px-4 py-3 text-right font-mono">~$700</td>
       </tr>
-      <tr class="hover:bg-blue-50/30">
-        <td class="px-4 py-3 font-medium sticky left-0 bg-white">RealWear HMT-Z1</td>
+      <tr class="hover:bg-white/5">
+        <td class="px-4 py-3 font-medium sticky left-0 bg-card">RealWear HMT-Z1</td>
         <td class="px-4 py-3">RealWear</td>
         <td class="px-4 py-3">Head-mounted display</td>
         <td class="px-4 py-3 text-center"><span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span></td>
@@ -260,22 +271,22 @@ body { font-family: 'Inter', sans-serif; }
     </tbody>
   </table>
   </div>
-  <p class="text-[12px] text-zinc-400 mt-3">Prices are estimated street prices excl. VAT. Specifications from manufacturer data sheets. Last verified June 2026.</p>
+  <p class="text-[12px] text-muted/60 mt-3">Prices are estimated street prices excl. VAT. Specifications from manufacturer data sheets. Last verified June 2026.</p>
 </div>
 </section>
 
 <!-- Headset Details -->
 <section id="headsets" class="px-4 pb-16">
 <div class="max-w-4xl mx-auto">
-  <h2 class="text-2xl font-bold mb-2">Intrinsically Safe Headsets — Detailed Reviews</h2>
-  <p class="text-zinc-500 text-[14px] mb-8">Over-ear hearing protection headsets with ATEX/IECEx certification for hazardous areas.</p>
+  <h2 class="text-2xl font-bold mb-2 text-white">Intrinsically Safe Headsets — Detailed Reviews</h2>
+  <p class="text-muted text-[14px] mb-8">Over-ear hearing protection headsets with ATEX/IECEx certification for hazardous areas.</p>
 
   <!-- Sensear SM1P-Ex -->
-  <article class="bg-white rounded-xl border border-zinc-200 p-6 mb-6 product-card">
+  <article class="bg-card rounded-xl border border-border p-6 mb-6 product-card">
     <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
       <div>
         <h3 class="text-xl font-bold">Sensear SM1P-Ex</h3>
-        <p class="text-zinc-500 text-[13px]">by Sensear (distributed by ecom instruments)</p>
+        <p class="text-muted text-[13px]">by Sensear (distributed by ecom instruments)</p>
       </div>
       <div class="flex gap-2">
         <span class="badge-z1 px-2.5 py-1 rounded-lg text-[11px] font-semibold">Zone 1/21</span>
@@ -283,26 +294,26 @@ body { font-family: 'Inter', sans-serif; }
         <span class="badge-iec px-2.5 py-1 rounded-lg text-[11px] font-semibold">IECEx</span>
       </div>
     </div>
-    <p class="text-[14px] text-zinc-700 leading-relaxed mb-4">
+    <p class="text-[14px] text-[#cccccc] leading-relaxed mb-4">
       The SM1P-Ex is the most full-featured intrinsically safe headset on the market. It combines hearing protection (27 dB NRR) with two-way radio communication, Bluetooth connectivity, and Sensear's proprietary SENS&reg; technology that enhances speech while suppressing background noise to a safe 82 dB(A) in-ear level. Available in headband, behind-the-neck, and helmet-mount configurations.
     </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[13px]">
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Certification</span><span class="font-medium">ATEX, IECEx, UL913, CSA</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Battery Life</span><span class="font-medium">24 hours</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">NRR</span><span class="font-medium">27 dB (headband)</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Est. Price</span><span class="font-medium">~$1,200</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Certification</span><span class="font-medium">ATEX, IECEx, UL913, CSA</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Battery Life</span><span class="font-medium">24 hours</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">NRR</span><span class="font-medium">27 dB (headband)</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Est. Price</span><span class="font-medium">~$1,200</span></div>
     </div>
-    <div class="mt-4 text-[13px] text-zinc-600">
-      <strong>Best for:</strong> Oil &amp; gas, chemical plants, and refineries where Zone 1 certification, Bluetooth, and two-way radio are all required. The gold standard for hazardous area communication headsets.
+    <div class="mt-4 text-[13px] text-muted">
+      <strong class="text-[#cccccc]">Best for:</strong> Oil &amp; gas, chemical plants, and refineries where Zone 1 certification, Bluetooth, and two-way radio are all required. The gold standard for hazardous area communication headsets.
     </div>
   </article>
 
   <!-- 3M Peltor LiteCom PRO III Ex -->
-  <article class="bg-white rounded-xl border border-zinc-200 p-6 mb-6 product-card">
+  <article class="bg-card rounded-xl border border-border p-6 mb-6 product-card">
     <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
       <div>
         <h3 class="text-xl font-bold">3M Peltor WS LiteCom PRO III Ex</h3>
-        <p class="text-zinc-500 text-[13px]">by 3M (distributed by ecom instruments)</p>
+        <p class="text-muted text-[13px]">by 3M (distributed by ecom instruments)</p>
       </div>
       <div class="flex gap-2">
         <span class="badge-z0 px-2.5 py-1 rounded-lg text-[11px] font-semibold">Zone 0/20</span>
@@ -310,26 +321,26 @@ body { font-family: 'Inter', sans-serif; }
         <span class="badge-iec px-2.5 py-1 rounded-lg text-[11px] font-semibold">IECEx</span>
       </div>
     </div>
-    <p class="text-[14px] text-zinc-700 leading-relaxed mb-4">
+    <p class="text-[14px] text-[#cccccc] leading-relaxed mb-4">
       The only headset on this list certified for Zone 0 (continuous explosive atmosphere). The LiteCom PRO III Ex is a hearing protection headset with a built-in PMR446/UHF two-way radio, allowing direct worker-to-worker communication without a separate radio unit. Operates on up to 30 channels with a range of up to 3 km.
     </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[13px]">
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 0, IECEx</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Battery Life</span><span class="font-medium">14 hours</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">NRR</span><span class="font-medium">28 dB</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Est. Price</span><span class="font-medium">~$1,500</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 0, IECEx</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Battery Life</span><span class="font-medium">14 hours</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">NRR</span><span class="font-medium">28 dB</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Est. Price</span><span class="font-medium">~$1,500</span></div>
     </div>
-    <div class="mt-4 text-[13px] text-zinc-600">
-      <strong>Best for:</strong> The most hazardous environments (Zone 0) — confined spaces, tank interiors, and areas with continuous explosive gas presence. The built-in radio means no separate Ex-certified radio is needed.
+    <div class="mt-4 text-[13px] text-muted">
+      <strong class="text-[#cccccc]">Best for:</strong> The most hazardous environments (Zone 0) — confined spaces, tank interiors, and areas with continuous explosive gas presence. The built-in radio means no separate Ex-certified radio is needed.
     </div>
   </article>
 
   <!-- Sensear SM1B-Ex -->
-  <article class="bg-white rounded-xl border border-zinc-200 p-6 mb-6 product-card">
+  <article class="bg-card rounded-xl border border-border p-6 mb-6 product-card">
     <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
       <div>
         <h3 class="text-xl font-bold">Sensear SM1B-Ex</h3>
-        <p class="text-zinc-500 text-[13px]">by Sensear</p>
+        <p class="text-muted text-[13px]">by Sensear</p>
       </div>
       <div class="flex gap-2">
         <span class="badge-z1 px-2.5 py-1 rounded-lg text-[11px] font-semibold">Zone 1/21</span>
@@ -337,26 +348,26 @@ body { font-family: 'Inter', sans-serif; }
         <span class="badge-iec px-2.5 py-1 rounded-lg text-[11px] font-semibold">IECEx</span>
       </div>
     </div>
-    <p class="text-[14px] text-zinc-700 leading-relaxed mb-4">
+    <p class="text-[14px] text-[#cccccc] leading-relaxed mb-4">
       The battery-powered version of the Sensear platform. The SM1B-Ex connects to two-way radios via a removable wired connection and features the same SENS&reg; speech enhancement technology. Built-in rechargeable lithium-ion battery provides 24-hour operation. Available in headband (27 dB NRR), behind-the-neck (24 dB NRR), or helmet mount (23 dB NRR).
     </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[13px]">
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Certification</span><span class="font-medium">ATEX, IECEx, UL913, CSA</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Battery Life</span><span class="font-medium">24 hours</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">NRR</span><span class="font-medium">27 dB (headband)</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Est. Price</span><span class="font-medium">~$900</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Certification</span><span class="font-medium">ATEX, IECEx, UL913, CSA</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Battery Life</span><span class="font-medium">24 hours</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">NRR</span><span class="font-medium">27 dB (headband)</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Est. Price</span><span class="font-medium">~$900</span></div>
     </div>
-    <div class="mt-4 text-[13px] text-zinc-600">
-      <strong>Best for:</strong> Teams that need Zone 1 hearing protection with two-way radio communication but don't require Bluetooth. More affordable than the SM1P-Ex while maintaining the same SENS&reg; technology and battery life.
+    <div class="mt-4 text-[13px] text-muted">
+      <strong class="text-[#cccccc]">Best for:</strong> Teams that need Zone 1 hearing protection with two-way radio communication but don't require Bluetooth. More affordable than the SM1P-Ex while maintaining the same SENS&reg; technology and battery life.
     </div>
   </article>
 
   <!-- 3M Peltor WS Alert XPI Ex -->
-  <article class="bg-white rounded-xl border border-zinc-200 p-6 mb-6 product-card">
+  <article class="bg-card rounded-xl border border-border p-6 mb-6 product-card">
     <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
       <div>
         <h3 class="text-xl font-bold">3M Peltor WS Alert XPI Ex</h3>
-        <p class="text-zinc-500 text-[13px]">by 3M</p>
+        <p class="text-muted text-[13px]">by 3M</p>
       </div>
       <div class="flex gap-2">
         <span class="badge-z0 px-2.5 py-1 rounded-lg text-[11px] font-semibold">Zone 0/20</span>
@@ -364,26 +375,26 @@ body { font-family: 'Inter', sans-serif; }
         <span class="badge-iec px-2.5 py-1 rounded-lg text-[11px] font-semibold">IECEx</span>
       </div>
     </div>
-    <p class="text-[14px] text-zinc-700 leading-relaxed mb-4">
+    <p class="text-[14px] text-[#cccccc] leading-relaxed mb-4">
       A Bluetooth-enabled hearing protection headset for Zone 0 hazardous areas. Features ambient listening technology that uses external microphones to let workers hear their surroundings while still being protected. Pairs with smartphones and tablets for calls and media. Excellent 30-hour battery life.
     </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[13px]">
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 0, IECEx</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Battery Life</span><span class="font-medium">30 hours</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">NRR</span><span class="font-medium">29 dB</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Est. Price</span><span class="font-medium">~$600</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 0, IECEx</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Battery Life</span><span class="font-medium">30 hours</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">NRR</span><span class="font-medium">29 dB</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Est. Price</span><span class="font-medium">~$600</span></div>
     </div>
-    <div class="mt-4 text-[13px] text-zinc-600">
-      <strong>Best for:</strong> Workers needing Bluetooth connectivity in Zone 0 environments without two-way radio. Good value for pure hearing protection + smartphone integration. The 30-hour battery is class-leading.
+    <div class="mt-4 text-[13px] text-muted">
+      <strong class="text-[#cccccc]">Best for:</strong> Workers needing Bluetooth connectivity in Zone 0 environments without two-way radio. Good value for pure hearing protection + smartphone integration. The 30-hour battery is class-leading.
     </div>
   </article>
 
   <!-- ecom Ex-TRA 30 -->
-  <article class="bg-white rounded-xl border border-zinc-200 p-6 mb-6 product-card">
+  <article class="bg-card rounded-xl border border-border p-6 mb-6 product-card">
     <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
       <div>
         <h3 class="text-xl font-bold">ecom Ex-TRA 30</h3>
-        <p class="text-zinc-500 text-[13px]">by ecom instruments (Pepperl+Fuchs)</p>
+        <p class="text-muted text-[13px]">by ecom instruments (Pepperl+Fuchs)</p>
       </div>
       <div class="flex gap-2">
         <span class="badge-z2 px-2.5 py-1 rounded-lg text-[11px] font-semibold">Zone 2/22</span>
@@ -391,34 +402,34 @@ body { font-family: 'Inter', sans-serif; }
         <span class="badge-iec px-2.5 py-1 rounded-lg text-[11px] font-semibold">IECEx</span>
       </div>
     </div>
-    <p class="text-[14px] text-zinc-700 leading-relaxed mb-4">
+    <p class="text-[14px] text-[#cccccc] leading-relaxed mb-4">
       A rugged wired headset designed for Zone 2 hazardous areas. The Ex-TRA 30 connects directly to ATEX-certified radios and smartphones. Available as a hearing protection headset or lightweight neckband version. No battery required — powered by the connected device. The most affordable option for Zone 2 environments.
     </p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[13px]">
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 2, IECEx</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Battery Life</span><span class="font-medium">N/A (wired)</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">NRR</span><span class="font-medium">25 dB</span></div>
-      <div class="bg-zinc-50 rounded-lg p-3"><span class="text-zinc-500 block text-[11px]">Est. Price</span><span class="font-medium">~$400</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Certification</span><span class="font-medium">ATEX Zone 2, IECEx</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Battery Life</span><span class="font-medium">N/A (wired)</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">NRR</span><span class="font-medium">25 dB</span></div>
+      <div class="bg-[#1a1a1a] rounded-lg p-3"><span class="text-muted block text-[11px]">Est. Price</span><span class="font-medium">~$400</span></div>
     </div>
-    <div class="mt-4 text-[13px] text-zinc-600">
-      <strong>Best for:</strong> Budget-conscious operations in Zone 2 that need wired communication with existing radios. No batteries to charge or certify. The lowest-cost entry into ATEX-certified headsets.
+    <div class="mt-4 text-[13px] text-muted">
+      <strong class="text-[#cccccc]">Best for:</strong> Budget-conscious operations in Zone 2 that need wired communication with existing radios. No batteries to charge or certify. The lowest-cost entry into ATEX-certified headsets.
     </div>
   </article>
 </div>
 </section>
 
 <!-- Earbuds Section -->
-<section id="earbuds" class="px-4 pb-16 bg-white border-y border-zinc-200 py-16">
+<section id="earbuds" class="px-4 pb-16 bg-card border-y border-border py-16">
 <div class="max-w-4xl mx-auto">
-  <h2 class="text-2xl font-bold mb-2">Intrinsically Safe Earbuds</h2>
-  <p class="text-zinc-500 text-[14px] mb-6">Truly wireless intrinsically safe earbuds do not currently exist with full ATEX/IECEx certification. Here is what is available and what to watch for.</p>
+  <h2 class="text-2xl font-bold mb-2 text-white">Intrinsically Safe Earbuds</h2>
+  <p class="text-muted text-[14px] mb-6">Truly wireless intrinsically safe earbuds do not currently exist with full ATEX/IECEx certification. Here is what is available and what to watch for.</p>
 
-  <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+  <div class="bg-accent/5 border border-accent/20 rounded-xl p-5 mb-8">
     <div class="flex items-start gap-3">
-      <i class="ph ph-warning text-amber-600 text-xl mt-0.5"></i>
+      <i class="ph ph-warning text-accent text-xl mt-0.5"></i>
       <div>
-        <h3 class="font-semibold text-[14px] text-amber-900 mb-1">No standalone ATEX-certified earbuds exist (yet)</h3>
-        <p class="text-[13px] text-amber-800 leading-relaxed">
+        <h3 class="font-semibold text-[14px] text-accent mb-1">No standalone ATEX-certified earbuds exist (yet)</h3>
+        <p class="text-[13px] text-[#cccccc] leading-relaxed">
           As of June 2026, there are no truly wireless earbuds with independent ATEX or IECEx certification for Zone 1 use. The "intrinsically safe earbuds" available are replacement ear tips for certified headset systems (like Sensear's SM1P-Ex) or earplug-style devices that require a certified host device. If a vendor claims standalone ATEX earbuds, ask for the certificate number.
         </p>
       </div>
@@ -428,20 +439,20 @@ body { font-family: 'Inter', sans-serif; }
   <h3 class="text-lg font-bold mb-4">Available earbud-style options</h3>
 
   <div class="space-y-4">
-    <div class="border border-zinc-200 rounded-xl p-5">
+    <div class="border border-border rounded-xl p-5">
       <h4 class="font-semibold mb-2">Sensear SM1B-ExDP Double Protection Earbuds</h4>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">
+      <p class="text-[13px] text-[#999] leading-relaxed">
         These are in-ear earbuds that sit underneath the SM1B-ExDP earmuffs, providing double hearing protection (earplug + earmuff) for extremely high-noise environments. ATEX certified as part of the SM1B-ExDP system. Not standalone — must be used with the certified headset.
       </p>
       <div class="mt-3 flex gap-2">
         <span class="badge-z1 px-2 py-0.5 rounded text-[11px] font-medium">Zone 1</span>
-        <span class="text-zinc-400 text-[11px]">Part of certified system only</span>
+        <span class="text-muted text-[11px]">Part of certified system only</span>
       </div>
     </div>
 
-    <div class="border border-zinc-200 rounded-xl p-5">
+    <div class="border border-border rounded-xl p-5">
       <h4 class="font-semibold mb-2">Intrinsically Safe Bluetooth Earbuds — Market Gap</h4>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">
+      <p class="text-[13px] text-[#999] leading-relaxed">
         The search volume for "intrinsically safe bluetooth earbuds" (40 searches/month) shows clear market demand. The engineering challenge is certifying a lithium battery small enough for an earbud form factor while meeting intrinsic safety energy limits. Several manufacturers are reportedly developing products for 2027 launch.
       </p>
     </div>
@@ -452,43 +463,43 @@ body { font-family: 'Inter', sans-serif; }
 <!-- Buying Guide -->
 <section id="guide" class="px-4 py-16">
 <div class="max-w-4xl mx-auto">
-  <h2 class="text-2xl font-bold mb-2">How to Choose an Intrinsically Safe Headset</h2>
-  <p class="text-zinc-500 text-[14px] mb-8">A step-by-step guide to selecting the right ATEX headset for your hazardous area.</p>
+  <h2 class="text-2xl font-bold mb-2 text-white">How to Choose an Intrinsically Safe Headset</h2>
+  <p class="text-muted text-[14px] mb-8">A step-by-step guide to selecting the right ATEX headset for your hazardous area.</p>
 
   <div class="space-y-6">
     <div class="flex gap-4">
-      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[14px]">1</div>
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold text-[14px]">1</div>
       <div>
         <h3 class="font-semibold text-[15px] mb-1">Determine your zone classification</h3>
-        <p class="text-[13px] text-zinc-600 leading-relaxed">Zone 0 (continuous explosive atmosphere) requires the highest certification level. Zone 1 (occasional) is the most common requirement. Zone 2 (rare/brief) allows more options at lower cost. Your site's hazardous area classification document will specify which zones apply.</p>
+        <p class="text-[13px] text-[#999] leading-relaxed">Zone 0 (continuous explosive atmosphere) requires the highest certification level. Zone 1 (occasional) is the most common requirement. Zone 2 (rare/brief) allows more options at lower cost. Your site's hazardous area classification document will specify which zones apply.</p>
       </div>
     </div>
     <div class="flex gap-4">
-      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[14px]">2</div>
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold text-[14px]">2</div>
       <div>
         <h3 class="font-semibold text-[15px] mb-1">Choose your communication type</h3>
-        <p class="text-[13px] text-zinc-600 leading-relaxed"><strong>Two-way radio:</strong> SM1P-Ex, SM1B-Ex, LiteCom PRO III Ex. <strong>Bluetooth only:</strong> Peltor Alert XPI Ex. <strong>Built-in radio (no separate device):</strong> LiteCom PRO III Ex. <strong>Wired only:</strong> ecom Ex-TRA 30. Most industrial sites use two-way radios, making the Sensear models the default choice.</p>
+        <p class="text-[13px] text-[#999] leading-relaxed"><strong>Two-way radio:</strong> SM1P-Ex, SM1B-Ex, LiteCom PRO III Ex. <strong>Bluetooth only:</strong> Peltor Alert XPI Ex. <strong>Built-in radio (no separate device):</strong> LiteCom PRO III Ex. <strong>Wired only:</strong> ecom Ex-TRA 30. Most industrial sites use two-way radios, making the Sensear models the default choice.</p>
       </div>
     </div>
     <div class="flex gap-4">
-      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[14px]">3</div>
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold text-[14px]">3</div>
       <div>
         <h3 class="font-semibold text-[15px] mb-1">Check regional certification requirements</h3>
-        <p class="text-[13px] text-zinc-600 leading-relaxed"><strong>Europe:</strong> ATEX 2014/34/EU required. <strong>International:</strong> IECEx accepted in most countries. <strong>North America:</strong> UL913 / CSA required — only Sensear models currently carry all three. <strong>Australia:</strong> IECEx accepted. Always verify the specific certificate number covers your gas group and temperature class.</p>
+        <p class="text-[13px] text-[#999] leading-relaxed"><strong>Europe:</strong> ATEX 2014/34/EU required. <strong>International:</strong> IECEx accepted in most countries. <strong>North America:</strong> UL913 / CSA required — only Sensear models currently carry all three. <strong>Australia:</strong> IECEx accepted. Always verify the specific certificate number covers your gas group and temperature class.</p>
       </div>
     </div>
     <div class="flex gap-4">
-      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[14px]">4</div>
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold text-[14px]">4</div>
       <div>
         <h3 class="font-semibold text-[15px] mb-1">Consider wearing style and noise level</h3>
-        <p class="text-[13px] text-zinc-600 leading-relaxed">Headband models offer the highest NRR but interfere with hard hats. Helmet-mount models attach directly to safety helmets. Behind-the-neck models work under hard hats. For extreme noise (>100 dB), consider double protection (SM1B-ExDP) which combines earplugs and earmuffs for 31 dB NRR.</p>
+        <p class="text-[13px] text-[#999] leading-relaxed">Headband models offer the highest NRR but interfere with hard hats. Helmet-mount models attach directly to safety helmets. Behind-the-neck models work under hard hats. For extreme noise (>100 dB), consider double protection (SM1B-ExDP) which combines earplugs and earmuffs for 31 dB NRR.</p>
       </div>
     </div>
     <div class="flex gap-4">
-      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[14px]">5</div>
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold text-[14px]">5</div>
       <div>
         <h3 class="font-semibold text-[15px] mb-1">Verify battery certification</h3>
-        <p class="text-[13px] text-zinc-600 leading-relaxed">Rechargeable batteries must be charged outside the hazardous area. Battery replacement in the field is only permitted with specific certified battery models. The ecom Ex-TRA 30 avoids this issue entirely by being wired. Check if your site allows lithium-ion batteries in the transition zones.</p>
+        <p class="text-[13px] text-[#999] leading-relaxed">Rechargeable batteries must be charged outside the hazardous area. Battery replacement in the field is only permitted with specific certified battery models. The ecom Ex-TRA 30 avoids this issue entirely by being wired. Check if your site allows lithium-ion batteries in the transition zones.</p>
       </div>
     </div>
   </div>
@@ -496,46 +507,46 @@ body { font-family: 'Inter', sans-serif; }
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="px-4 py-16 bg-white border-y border-zinc-200">
+<section id="faq" class="px-4 py-16 bg-card border-y border-border">
 <div class="max-w-4xl mx-auto">
-  <h2 class="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+  <h2 class="text-2xl font-bold mb-8 text-white">Frequently Asked Questions</h2>
 
   <div class="space-y-6">
     <div>
       <h3 class="font-semibold text-[15px] mb-2">What does "intrinsically safe" mean for a headset?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">An intrinsically safe headset is designed so that its electrical energy (from batteries, speakers, and microphones) is too low to ignite an explosive atmosphere. This is achieved through energy-limiting circuits, certified battery cells, and spark-proof construction. The device is tested and certified by a notified body to standards like IEC 60079-11.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">An intrinsically safe headset is designed so that its electrical energy (from batteries, speakers, and microphones) is too low to ignite an explosive atmosphere. This is achieved through energy-limiting circuits, certified battery cells, and spark-proof construction. The device is tested and certified by a notified body to standards like IEC 60079-11.</p>
     </div>
     <div>
       <h3 class="font-semibold text-[15px] mb-2">Can I use regular noise-cancelling headphones in a hazardous area?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">No. Standard headphones (including AirPods, Sony, Bose, etc.) are not certified for hazardous areas and could cause an ignition. Even passive earmuffs with no electronics are not automatically approved — any equipment used in classified zones must carry the appropriate ATEX/IECEx marking for that zone.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">No. Standard headphones (including AirPods, Sony, Bose, etc.) are not certified for hazardous areas and could cause an ignition. Even passive earmuffs with no electronics are not automatically approved — any equipment used in classified zones must carry the appropriate ATEX/IECEx marking for that zone.</p>
     </div>
     <div>
       <h3 class="font-semibold text-[15px] mb-2">What is the difference between ATEX and IECEx headset certification?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">ATEX is a European Union directive (2014/34/EU) required for equipment in EU member states. IECEx is an international certification scheme accepted in most countries outside the EU. Most headset manufacturers carry both. In North America, UL913 (US) and CSA (Canada) certifications are required instead.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">ATEX is a European Union directive (2014/34/EU) required for equipment in EU member states. IECEx is an international certification scheme accepted in most countries outside the EU. Most headset manufacturers carry both. In North America, UL913 (US) and CSA (Canada) certifications are required instead.</p>
     </div>
     <div>
       <h3 class="font-semibold text-[15px] mb-2">Are there intrinsically safe earbuds or AirPods alternatives?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">As of 2026, no truly wireless earbuds carry independent ATEX or IECEx certification. The in-ear options available (like Sensear's double protection earbuds) are components of certified headset systems and cannot be used standalone. The market is watching for developments, but the challenge of certifying lithium batteries in earbud form factors remains unsolved.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">As of 2026, no truly wireless earbuds carry independent ATEX or IECEx certification. The in-ear options available (like Sensear's double protection earbuds) are components of certified headset systems and cannot be used standalone. The market is watching for developments, but the challenge of certifying lithium batteries in earbud form factors remains unsolved.</p>
     </div>
     <div>
       <h3 class="font-semibold text-[15px] mb-2">How much do intrinsically safe headsets cost?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">Prices range from approximately $400 (ecom Ex-TRA 30, wired, Zone 2) to $2,500 (RealWear HMT-Z1, head-mounted display). The most common Zone 1 communication headsets (Sensear SM1P-Ex, SM1B-Ex) cost between $900 and $1,200. The 3M Peltor Zone 0 models range from $600 to $1,500. Expect to add $50–$150 for helmet mount adapters.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">Prices range from approximately $400 (ecom Ex-TRA 30, wired, Zone 2) to $2,500 (RealWear HMT-Z1, head-mounted display). The most common Zone 1 communication headsets (Sensear SM1P-Ex, SM1B-Ex) cost between $900 and $1,200. The 3M Peltor Zone 0 models range from $600 to $1,500. Expect to add $50–$150 for helmet mount adapters.</p>
     </div>
     <div>
       <h3 class="font-semibold text-[15px] mb-2">Can I charge an intrinsically safe headset in a hazardous area?</h3>
-      <p class="text-[13px] text-zinc-600 leading-relaxed">No. Charging must always be done in a safe (non-classified) area. The charging process involves higher energy levels than normal operation and is not covered by the intrinsic safety certification. Most sites have designated charging stations in control rooms or office areas.</p>
+      <p class="text-[13px] text-[#999] leading-relaxed">No. Charging must always be done in a safe (non-classified) area. The charging process involves higher energy levels than normal operation and is not covered by the intrinsic safety certification. Most sites have designated charging stations in control rooms or office areas.</p>
     </div>
   </div>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="px-4 py-12 bg-zinc-900 text-zinc-400">
+<footer class="px-4 py-12 bg-[#050505] text-muted">
 <div class="max-w-4xl mx-auto">
   <div class="flex flex-wrap items-start justify-between gap-8">
     <div>
       <div class="flex items-center gap-2 text-white font-semibold text-[15px] mb-3">
-        <i class="ph ph-headset text-blue-400 text-xl"></i>
+        <i class="ph ph-headset text-accent text-xl"></i>
         intrinsicallysafeheadsets.com
       </div>
       <p class="text-[13px] max-w-xs leading-relaxed">Independent comparison of ATEX and IECEx certified headsets for hazardous areas. Not affiliated with any manufacturer.</p>
@@ -548,7 +559,7 @@ body { font-family: 'Inter', sans-serif; }
       <a href="#faq" class="block hover:text-white">FAQ</a>
     </div>
   </div>
-  <div class="border-t border-zinc-800 mt-8 pt-6 text-[12px] text-zinc-500">
+  <div class="border-t border-border mt-8 pt-6 text-[12px] text-muted/60">
     <p>&copy; 2026 intrinsicallysafeheadsets.com. All product names, logos, and brands are property of their respective owners. Specifications sourced from manufacturer data sheets and may change without notice.</p>
   </div>
 </div>
