@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0f172a"/>
-  <path d="M8 18v-4a8 8 0 0 1 16 0v4" stroke="#3b82f6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <rect x="6" y="17" width="4" height="7" rx="2" fill="#3b82f6"/>
-  <rect x="22" y="17" width="4" height="7" rx="2" fill="#3b82f6"/>
+  <!-- Dark hexagon background -->
+  <path d="M16 1L30 8.5V23.5L16 31L2 23.5V8.5L16 1Z" fill="#1a1a1a"/>
+  <!-- Headset band -->
+  <path d="M9 19v-4a7 7 0 0 1 14 0v4" stroke="#e32735" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Left ear cup -->
+  <rect x="7" y="18" width="4" height="6" rx="1.5" fill="#e32735"/>
+  <!-- Right ear cup -->
+  <rect x="21" y="18" width="4" height="6" rx="1.5" fill="#e32735"/>
 </svg>
