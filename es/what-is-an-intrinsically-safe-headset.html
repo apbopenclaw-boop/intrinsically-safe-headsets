@@ -55,6 +55,20 @@
     <a href="/es/" class="hover:text-white">Inicio:</a>
     
     <a href="/es/best-atex-headsets-2026.html" class="hover:text-white">Los mejores auriculares de 2026</a>
+    <div class="relative ml-4 pl-4 border-l border-border">
+      <button onclick="document.getElementById('langDropdown').classList.toggle('hidden')" class="flex items-center gap-1 hover:text-white text-[13px]">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+        <span id="currentLang">ES</span>
+        <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div id="langDropdown" class="hidden absolute right-0 top-8 bg-card border border-border rounded-lg py-1 min-w-[100px] shadow-xl z-50">
+        <a href="/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">English</a>
+        <a href="/de/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Deutsch</a>
+        <a href="/es/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Español</a>
+        <a href="/nl/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Nederlands</a>
+        <a href="/pt-br/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Português</a>
+      </div>
+    </div>
   </div>
   <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
     <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -222,5 +236,16 @@
 </div>
 </footer>
 
+<script>
+document.addEventListener('click',function(e){
+  var d=document.getElementById('langDropdown'),b=d?d.previousElementSibling:null;
+  if(d&&b&&!d.contains(e.target)&&!b.contains(e.target))d.classList.add('hidden');
+});
+(function(){
+  var p=location.pathname,m=p.match(/^\/(de|es|nl|pt-br)\//);
+  var el=document.getElementById('currentLang');
+  if(el&&m)el.textContent=m[1].toUpperCase();
+})();
+</script>
 </body>
 </html>
