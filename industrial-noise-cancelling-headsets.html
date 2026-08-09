@@ -32,6 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 <script>
@@ -47,7 +48,6 @@ tailwind.config = {
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Best Industrial Noise Cancelling Headsets (2026)","description":"Top industrial noise cancelling headsets for construction, manufacturing, and hazardous areas.","url":"https://intrinsicallysafeheadsets.com/industrial-noise-cancelling-headsets.html","datePublished":"2026-06-27","dateModified":"2026-06-27","publisher":{"@type":"Organization","name":"intrinsicallysafeheadsets.com"}}
 </script>
-<style>body{font-family:'Inter',sans-serif;}.nav-blur{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}</style>
 <!-- GA4 Hazardous Area Guide Network -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53EXCZ857W"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
@@ -86,32 +86,7 @@ tailwind.config = {
 </div>
 </nav>
 
-<div id="mobileMenu" class="hidden fixed inset-0 z-[60] bg-surface/95 nav-blur px-6 pt-6">
-  <div class="flex justify-between items-center mb-8">
-    <a href="/" class="flex items-center gap-2 font-semibold text-[15px] text-white">
-      <i class="ph ph-headset text-accent text-xl"></i> intrinsicallysafeheadsets.com
-    </a>
-    <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-2" aria-label="Close menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-  </div>
-  <div class="space-y-1">
-    <a href="/" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">Home</a>
-    <a href="/best-atex-headsets-2026.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">Best ATEX Headsets 2026</a>
-    <a href="/what-is-an-intrinsically-safe-headset.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">What Is an IS Headset?</a>
-    <a href="/sensear-sm1p-ex-alternatives.html" class="block py-3 px-3 rounded-lg text-[14px] text-muted hover:bg-white/5">Sensear Alternatives</a>
-    <a href="/peltor-litecom-pro-iii-ex-alternatives.html" class="block py-3 px-3 rounded-lg text-[14px] text-muted hover:bg-white/5">Peltor Alternatives</a>
-    <a href="/sensear-sm1p-vs-sm1b-comparison.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">Sensear Comparison</a>
-    <a href="/atex-radios-hazardous-area-communication.html" class="block py-3 px-3 rounded-lg text-[15px] text-[#cccccc] hover:bg-white/5">ATEX Radios Guide</a>
-    <div class="border-t border-border my-4"></div>
-    <div class="flex gap-3 px-3">
-      <a href="/de/" class="text-[13px] text-muted hover:text-white">DE</a>
-      <a href="/nl/" class="text-[13px] text-muted hover:text-white">NL</a>
-      <a href="/es/" class="text-[13px] text-muted hover:text-white">ES</a>
-      <a href="/pt-br/" class="text-[13px] text-muted hover:text-white">PT</a>
-    </div>
-  </div>
-</div>
+
 
 <article class="pt-24 pb-16 px-4">
 <div class="max-w-3xl mx-auto">
@@ -289,11 +264,8 @@ tailwind.config = {
 </div>
 </article>
 
-<footer class="px-4 py-8 bg-[#050505] text-muted text-[12px]">
-<div class="max-w-3xl mx-auto text-center">
-  <p>&copy; 2026 intrinsicallysafeheadsets.com. Not affiliated with any manufacturer.</p>
-</div>
-</footer>
+<div id="site-footer"></div>
+
 <script>
 document.addEventListener('click',function(e){
   var d=document.getElementById('langDropdown'),b=d?d.previousElementSibling:null;
@@ -305,5 +277,7 @@ document.addEventListener('click',function(e){
   if(el&&m)el.textContent=m[1].toUpperCase();
 })();
 </script>
+<script src="/js/nav.js"></script>
+<script src="/js/footer.js"></script>
 </body>
 </html>

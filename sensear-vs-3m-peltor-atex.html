@@ -32,24 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Satoshi:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#0b0405;--card:#150e0f;--border:#382e30;--muted:#858182;--accent:#e32735;--text:#f5f0f0;}
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Satoshi',sans-serif;background:var(--bg);color:var(--text);}
-  .serif{font-family:'DM Serif Display',Georgia,serif;}
-  .glass-nav{position:sticky;top:0;z-index:50;background:rgba(11,4,5,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
-  .badge{display:inline-block;padding:.2rem .55rem;border-radius:6px;font-size:.72rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
-  .badge-win{background:rgba(227,39,53,.15);color:#e32735;}
-  .badge-draw{background:rgba(133,129,130,.15);color:var(--muted);}
-  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;}
-  .vs-row{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--border);align-items:center;}
-  .vs-row:last-child{border-bottom:none;}
-  .winner{background:rgba(227,39,53,.08);padding:.3rem .6rem;border-radius:8px;}
-  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.4rem;border-radius:999px;font-size:.875rem;font-weight:500;transition:all .2s;cursor:pointer;border:none;text-decoration:none;}
-  .btn-pri{background:var(--accent);color:#fff;}
-  .btn-sec{background:var(--card);color:var(--text);border:1px solid var(--border);}
-  .verdict{border-left:4px solid var(--accent);padding-left:1.5rem;}
-</style>
+<link rel="stylesheet" href="/css/style.css">
 <!-- GA4 Hazardous Area Guide Network -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53EXCZ857W"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
@@ -57,30 +40,8 @@
 <body class="min-h-screen">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSPF6PH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<header class="glass-nav">
-  <div class="max-w-[860px] mx-auto px-6 h-16 flex items-center gap-6">
-    <a href="/" class="text-[15px] font-semibold tracking-tight">intrinsicallysafeheadsets<span style="color:var(--muted)">.com</span></a>
-    <nav class="hidden md:flex items-center gap-5 text-[14px] ml-auto" style="color:var(--muted)">
-      <a href="/" class="hover:text-[color:var(--text)]">Home</a>
-      <a href="/best-atex-headsets-2026.html" class="hover:text-[color:var(--text)]">Best 2026</a>
-      <a href="/sensear-sm1p-vs-sm1b-comparison.html" class="hover:text-[color:var(--text)]">SM1P vs SM1B</a>
-      <div class="relative ml-4 pl-4 border-l border-border">
-        <button onclick="document.getElementById('langDropdown').classList.toggle('hidden')" class="flex items-center gap-1 hover:text-white text-[13px]">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
-          <span id="currentLang">EN</span>
-          <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div id="langDropdown" class="hidden absolute right-0 top-8 bg-card border border-border rounded-lg py-1 min-w-[100px] shadow-xl z-50">
-          <a href="/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">English</a>
-          <a href="/de/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Deutsch</a>
-          <a href="/es/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Español</a>
-          <a href="/nl/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Nederlands</a>
-          <a href="/pt-br/" class="block px-3 py-1.5 text-[12px] hover:bg-white/5 hover:text-white">Português</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
+<div id="site-nav"></div>
+
 
 <main class="max-w-[860px] mx-auto px-6 py-16">
   <div class="mb-3 text-[13px]" style="color:var(--muted)">
@@ -157,11 +118,8 @@
   </div>
 </main>
 
-<footer style="border-top:1px solid var(--border)">
-  <div class="max-w-[860px] mx-auto px-6 py-8 text-[12px]" style="color:var(--muted)">
-    &copy; 2026 intrinsicallysafeheadsets.com &middot; Engineering reference — not a safety certificate.
-  </div>
-</footer>
+<div id="site-footer"></div>
+
 <script>
 document.addEventListener('click',function(e){
   var d=document.getElementById('langDropdown'),b=d?d.previousElementSibling:null;
@@ -173,5 +131,7 @@ document.addEventListener('click',function(e){
   if(el&&m)el.textContent=m[1].toUpperCase();
 })();
 </script>
+<script src="/js/nav.js"></script>
+<script src="/js/footer.js"></script>
 </body>
 </html>

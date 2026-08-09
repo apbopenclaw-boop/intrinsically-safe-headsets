@@ -1,0 +1,130 @@
+/* intrinsicallysafeheadsets.com — Design Tokens & Shared Styles */
+:root {
+  /* Palette */
+  --color-bg: #f5f3f0;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-border: #e0dcd6;
+  --color-accent: #E32735;
+  --color-accent-hover: #C41E2A;
+
+  /* Callouts */
+  --callout-info: #dbeafe;
+  --callout-success: #dcfce7;
+  --callout-warning: #fef3c7;
+  --callout-note: #f3f4f6;
+
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'DM Serif Display', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --radius: 4px;
+  --max-width: 1100px;
+}
+
+/* Base */
+body {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.card:hover {
+  border-color: #c8c3bc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Tile (dark-on-light variant) */
+.tile {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color .15s ease, background-color .15s ease;
+}
+.tile:hover {
+  border-color: #c8c3bc;
+  background-color: rgba(0,0,0,0.02);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* Chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* Tables */
+.cmp-table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+}
+.cmp-table th {
+  text-align: left;
+  padding: .75rem .5rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cmp-table td {
+  padding: .65rem .5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  vertical-align: top;
+  color: var(--color-text-muted);
+}
+.cmp-table tr:last-child td { border-bottom: none; }
+.cmp-table td.model { color: var(--color-text); font-weight: 500; }
+
+/* Language select */
+.lang-select {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Focus states */
+a:focus-visible, button:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Links */
+a { color: inherit; }
+a.underline { text-decoration: underline; }
+a.underline:hover { color: var(--color-text); }
