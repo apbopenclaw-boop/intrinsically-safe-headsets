@@ -1,0 +1,27 @@
+/* Mobile tables (see mobile-tables.js): one card per row on phones. Neutral colors so it suits light and dark sites. */
+@media (max-width: 600px) {
+  .mt-stack-wrap { overflow: visible !important; margin-left: 0 !important; margin-right: 0 !important; min-width: 0 !important; }
+  table.mt-stack, table.mt-stack tbody { display: block !important; width: 100% !important; min-width: 0 !important; max-width: 100% !important; overflow: visible !important; }
+  table.mt-stack thead, table.mt-stack tr:first-child:has(> th:first-child + th) { display: none !important; }
+  table.mt-stack tr { display: block !important; margin: 0 0 10px; border: 1px solid rgba(127, 127, 127, .28); border-radius: 6px; overflow: hidden; }
+  table.mt-stack td, table.mt-stack tbody th {
+    display: grid !important; grid-template-columns: minmax(0, 40%) minmax(0, 1fr); gap: 10px;
+    width: auto !important; min-width: 0 !important; white-space: normal !important; text-align: left !important; position: static !important;
+    padding: 6px 10px !important; border: 0 !important; border-bottom: 1px solid rgba(127, 127, 127, .16) !important;
+    overflow-wrap: anywhere;
+  }
+  table.mt-stack td::before, table.mt-stack tbody th::before {
+    content: attr(data-label); font-size: .72em; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; opacity: .72;
+  }
+  table.mt-stack td > *, table.mt-stack tbody th > * { justify-self: start; max-width: 100%; }   /* badges keep their size */
+  table.mt-stack tr > :first-child { grid-template-columns: 1fr; font-weight: 600; background: rgba(127, 127, 127, .08); }
+  table.mt-stack tr > :first-child::before { display: none; }
+  table.mt-stack tr > :last-child { border-bottom: 0 !important; }
+  table.mt-stack td:not([data-label])::before { display: none; }
+  table.mt-stack td:not([data-label]) { grid-template-columns: 1fr; }
+}
+/* Long single words (e.g. Dutch/German compounds) in headings wrap instead of widening the page. */
+@media (max-width: 600px) {
+  h1, h2, h3 { overflow-wrap: break-word; hyphens: auto; }
+  .brand-tld { display: none; }   /* optional: mark the ".com" part of a logo with this class to drop it on phones */
+}
