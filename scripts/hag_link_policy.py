@@ -198,7 +198,9 @@ def process(doc, site, rel_path, root, asset_url):
     s1, s2, cl, net = T[lang]
     x = (f'<a href="{utm("https://xshielder.com/", site, "footer_sponsor")}" rel="sponsored noopener" '
          f'target="_blank" style="color:inherit;text-decoration:underline">Xshielder</a>')
-    c = f'<a href="{contact_href(site, doc, lang, rel_path, root)}" style="color:inherit;text-decoration:underline">{cl}</a>'
+    ch = contact_href(site, doc, lang, rel_path, root)
+    crel = ' rel="nofollow"' if ch.startswith("http") else ""  # contact form on another network site
+    c = f'<a href="{ch}"{crel} style="color:inherit;text-decoration:underline">{cl}</a>'
     n = ("Hazardous Area Guide" if site == HUB else
          '<a href="https://hazardousareaguide.com/" rel="nofollow" style="color:inherit;text-decoration:underline">'
          'Hazardous Area Guide</a>')
